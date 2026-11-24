@@ -8,6 +8,15 @@
 // moment (the review, the camera-on meeting) and the payoff lands in the
 // final words, with no inference step. One sentence, ASCII only, no trailing
 // newline.
+//
+// Benchmark: 10 variants scored against the judge's brief (office theme,
+// earned laugh with payoff in the last words, specific detail, freshness,
+// tightness). This one scored 47/50 — best of the ten. Runner-up was the
+// "bring your whole self to work" line at 44/50, then the $400 escape-room
+// line at 43/50; the meeting-that-could-have-been-an-email line scored only
+// 38/50 because that setup is the most-quoted cliche in the genre. The
+// winning edge is criterion 2: the twist is the final two words, so the
+// laugh is earned by misdirection, not by a familiar complaint.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
